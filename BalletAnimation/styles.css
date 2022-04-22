@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Orelega+One&display=swap');
+
 
 
 * {
     padding:0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Ballet', cursive;
+    font-family: 'Ms Madi', cursive;
 }
 
 body {
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,9 +27,10 @@ body {
 
 .name {
     font-size: 40px;
-    font-weight: bold;
+    /* font-weight: bold; */
     height: 90px;
     position: relative;
+    color: lightgray;
 }
 
 span {
@@ -40,7 +43,7 @@ span {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: black;
     border-left: 10px solid red;
     animation: moving 2s steps(100) infinite;
 }

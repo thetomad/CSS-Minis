@@ -1,0 +1,42 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(gray,black);
+    font-size: 40px;
+}
+
+p {
+    position: relative;
+    overflow: hidden;
+    color:#988787;
+}
+
+p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #4C1186;
+    
+    transition: transform .5s ease;
+    transform:  translateX(-101%);;
+}
+
+p:hover {
+    color: #d5d5d5;
+}
+
+p:hover::before {
+    transform: translateX(0);
+}
