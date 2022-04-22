@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ballet', cursive;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: inline-flex;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    height: 90px;
+    position: relative;
+}
+
+span {
+    position: relative;
+}
+
+.name::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 10px solid red;
+    animation: moving 2s steps(100) infinite;
+}
+
+@keyframes moving {
+    100% {
+        left: 100%;
+        margin: 0 -70px 0 70px;
+    }
+    
+}
