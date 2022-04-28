@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(gray,black);
+    background: linear-gradient(black,gray);
     font-size: 40px;
 }
 
@@ -34,7 +34,7 @@ p::before {
 }
 
 p:hover {
-    color: #d5d5d5;
+    color: #5e5574;
 }
 
 p:hover::before {
